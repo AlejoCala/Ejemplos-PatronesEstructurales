@@ -3,12 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Adapter;
+package Bridge;
 
 /**
- * ADAPTER El patrón Adapter permite que interfaces incompatibles trabajen juntas. 
+ *
  * @author Pc-Smart
  */
-interface Pajaro {
-    void volar();
+public class Azul implements Color {
+    @Override
+    public void pintar(){
+        System.out.println("Pintar de color Azul");
+    }
 }

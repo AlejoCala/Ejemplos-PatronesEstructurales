@@ -6,9 +6,11 @@
 package Adapter;
 
 /**
- * ADAPTER El patrón Adapter permite que interfaces incompatibles trabajen juntas. 
+ *
  * @author Pc-Smart
  */
-interface Pajaro {
-    void volar();
+class Golondrina {
+    public void cantar(){
+        System.out.println("Silvido");
+    }
 }
