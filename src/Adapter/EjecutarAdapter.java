@@ -12,7 +12,7 @@ package Adapter;
  * 
  * @author Pc-Smart
  */
-public class EjecutarPajaro {
+public class EjecutarAdapter {
 
     /**
      * @param args the command line arguments
@@ -21,6 +21,10 @@ public class EjecutarPajaro {
         Golondrina golondrina = new Golondrina();
         Pajaro pajaro = new GolondrinaAdapter(golondrina);
         pajaro.volar();
+        
+        Helicoptero helicoptero = new Helicoptero();
+        Volador volador = new HelicopteroAdapter(helicoptero);
+        volador.volar();
     }
     
 }
